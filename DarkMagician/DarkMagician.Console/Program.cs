@@ -9,32 +9,16 @@ Console.ForegroundColor = ConsoleColor.Cyan;
 Console.WriteLine("SO..." + name + " WHATS YOUR CLASS? WARRIOR? ROGUE? OR MAGICIAN?");
 Console.ForegroundColor = ConsoleColor.White;
 var playerClass = Console.ReadLine();
-if (playerClass == "WARRIOR")
-{
-    Console.ForegroundColor = ConsoleColor.Red;
-
-    Console.WriteLine("ERROR UNABLE TO CHOOSE THIS CLASS");
-    Console.WriteLine();
-
-    Console.ForegroundColor = ConsoleColor.Cyan;
-    Console.WriteLine("SOMETHINGS WRONG... CHOOSE AGAIN");
-    Console.ForegroundColor= ConsoleColor.White;
-    playerClass = Console.ReadLine();
-}
-Console.ForegroundColor = ConsoleColor.White;
-if (playerClass == "ROGUE")
-{
-    Console.ForegroundColor = ConsoleColor.Red;
-
-    Console.WriteLine("ERROR UNABLE TO CHOOSE THIS CLASS");
-
-    Console.ForegroundColor = ConsoleColor.Cyan;
-
-    Console.WriteLine("SOMETHINGS WRONG... CHOOSE AGAIN");
-
     Console.ForegroundColor = ConsoleColor.White;
-    playerClass = Console.ReadLine();
-    if (playerClass == "WARRIOR")
+if (playerClass == "MAGICIAN")
+{
+    Console.ForegroundColor = ConsoleColor.Cyan;
+
+    
+}
+else
+{
+    while ((playerClass == "ROGUE") || (playerClass =="WARRIOR"))
     {
         Console.ForegroundColor = ConsoleColor.Red;
 
@@ -43,19 +27,14 @@ if (playerClass == "ROGUE")
 
         Console.ForegroundColor = ConsoleColor.Cyan;
         Console.WriteLine("SOMETHINGS WRONG... CHOOSE AGAIN");
+        Console.ForegroundColor = ConsoleColor.White;
         playerClass = Console.ReadLine();
     }
 }
 
-Console.ForegroundColor = ConsoleColor.White;
-if (playerClass == "MAGICIAN")
-{
-    Console.ForegroundColor = ConsoleColor.Cyan;
-
-    Console.WriteLine("GOOD CHOICE FOR MAGIC WORLD I GUESS, BUT STILL WARRIOR GETS MORE LAID");
-}
 Console.ForegroundColor = ConsoleColor.Cyan;
-
+Console.WriteLine("GOOD CHOICE FOR MAGIC WORLD I GUESS, BUT STILL WARRIOR GETS MORE LAID");
+Console.WriteLine();
 Console.WriteLine("CLOSE YOUR EYES AND GET READY FOR YOUR FIRT ADVENTURE");
 Console.WriteLine();
 Console.ForegroundColor = ConsoleColor.Blue;
